@@ -1,3 +1,552 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+}
+
+h1{
+  font-size:55px;
+}
+
+h3{
+  font-size:15px;
+}
+
+.title {
+  margin: 0 20px 0 0;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  color: purple;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.container hr {
+  border:1px solid black;
+  width:100%;
+  margin-bottom:40px;
+}
+
+h1,
+br .heading {
+  text-align: center;
+}
+
+.container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:800px;
+  display:flex;
+  flex-direction:column;
+}
+
+.services, .product, .vision, .features, .about, .contact {
+  margin-top:auto;
+}
+
+header{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+.header_img {
+  margin-left:30px;
+}
+
+.header_img img {
+  width:300px;
+}
+
+
+
+
+.word_button {
+  display: flex;
+  flex-direction: column;
+  margin-right:30px;
+}
+
+.innov8 {
+  font-size: 80px;
+}
+
+.button {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.content-container{
+  display: flex;
+  flex-direction:column;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first_set{
+  margin-right: 10px;
+}
+
+
+
+.middle-img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom:30px;
+}
+
+.service_word {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Service page below*/
+
+.nav_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-header-img {
+  width: 100vw;
+}
+
+.toppy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 .toppy {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  /*font-size:50px;*/
+}
+
+
+body{
+    max-width:800px
+}
+
+.contact_info{
+  margin-bottom:20px;
+}
+
+footer{
+  text-align:center;
+  margin-bottom:20px;
+}
+/*
+.first_pair {
+  display: flex;
+  flex-direction: row;
+}
+
+.first_pair {
+  box-sizing: border-box;
+}
+
+.first_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+.button_1 {
+  background-color: white;
+  text-align: center;
+  padding: 20x 10px 10px 10px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+.button_2 {
+  background-color: white;
+  text-align: center;
+  padding: 15x 30px 10px 30px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+/*continue adding padding for top right bottom and left along with changes to other pair*/
+/*
+.second_pair {
+  display: flex;
+  flex-direction: row;
+}
+
+.second_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+.button_3 {
+  background-color: white;
+  text-align: center;
+  padding: 15x 30px 10px 30px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+.third_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+.button_4 {
+  background-color: white;
+  text-align: center;
+  padding: 15x 30px 10px 30px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+.fourth_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+.third_pair {
+  display: flex;
+  flex-direction: row;
+}
+
+.button_5 {
+  background-color: white;
+  text-align: center;
+  padding: 15x 30px 10px 30px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+.fifth_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+.button_6 {
+  background-color: white;
+  text-align: center;
+  padding: 15x 30px 10px 30px;
+  border: 1px solid black;
+  width: 100px;
+  margin: 20px;
+}
+
+.sixth_sect {
+  background-color: lightgray;
+  margin: 10px 10px 10px 20px;
+  padding: 20px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.services-info-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.j_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/*.facts_bottom{
+	  display:flex;
+	  flex-direction:column;
+  }*/
+
+/*
+	background-color: grey;
+	border: 1px solid black;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	margin:2%
+	justify-content:space-evenly;
+	padding:10px;
+}
+
+
+.facts {
+  margin: 0 800px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  margin: 0 0 0 20px;
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.img_3 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 300px 200px 0;
+  flex-direction: content;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.v_bottom {
+  text-align: center;
+}
+*/
+/*media queries*/
+
+@media (max-width: 800px) {
+  .header_img img{
+    display:none;
+  }
+  .container {
+    padding:50px;
+  }
+}
+
+@media (max-width: 500px) {
+    .navigation{
+        order: 0;
+        display:flex;
+        flex-direction:row-reverse;
+
+    }
+
+    .first_set{
+      margin-bottom:10px;
+    }
+
+    .top-content {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+    }
+
+    .bottom-content {
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+    }
+
+    .third_set{
+      margin-bottom:10px;
+    }
+  
+
+    .fourth_set{
+      margin-bottom:10px
+    }
+  
+    .code_img {
+    display: none;
+       
+  }
+
+  .logo {
+      order:1;
+      display:flex;
+      flex-direction:row-reverse;
+    
+  }
+  body{
+    height:150vh;
+    justify-content:space-around;
+  }
+  .word_button {
+    order: 1
+    width:50%;
+  }
+  
+  
 
 
